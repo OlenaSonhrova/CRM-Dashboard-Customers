@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRM Dashboard Customers</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="dashboard">
+		<aside class="dashboard__sidebar sidebar">
+			<div class="sidebar__header">
+				<div class="sidebar__heade-logo">
+					<img src="./image/image_sidebar/setting 1.png" alt="Dashboard Logo" class="sidebar__logo-image">
+					<span class="sidebar__logo-text">Dashboard</span>
+				</div>
+				<span class="sidebar__logo-text-version">v.01</span>
+			</div>
+
+			<div class="sidebar__menu ">
+				<nav class="menu__body navbar">
+					<ul class="menu__list menu" id="menu">
+						<li class="menu__item">
+							<div class="menu__item-name">
+								<img src="./image/image_sidebar/key-square.png" alt="Dashboard Logo" class="menu__icon">
+								<a href="" class="menu__link">Dashboard</a>
+							</div>
+						</li>
+						<li class="menu__item">
+							<div class="menu__item-name">
+								<img src="./image/image_sidebar/3d-square 1.png" alt="Dashboard Logo" class="menu__icon">
+								<a href="" class="menu__link">Product</a>
+							</div>
+							<img src="./image/image_sidebar/chevron-right 2.png" alt="Dashboard Logo" class="menu__icon-next">
+						</li>
+						<li class="menu__item">
+							<div class="menu__item-name">
+								<img src="./image/image_sidebar/3d-square 1.png" alt="Dashboard Logo" class="menu__icon">
+								<a href="" class="menu__link">Customers</a>
+							</div>
+							<img src="./image/image_sidebar/chevron-right 2.png" alt="Dashboard Logo" class="menu__icon-next">
+						</li>
+						<li class="menu__item">
+							<div class="menu__item-name">
+								<img src="./image/image_sidebar/wallet-money 2.png" alt="Dashboard Logo" class="menu__icon">
+								<a href="" class="menu__link">Income</a>
+							</div>
+							<img src="./image/image_sidebar/chevron-right 2.png" alt="Dashboard Logo" class="menu__icon-next">
+						</li>
+						<li class="menu__item">
+							<div class="menu__item-name">
+								<img src="./image/image_sidebar/discount-shape 1.png" alt="Dashboard Logo" class="menu__icon">
+								<a href="" class="menu__link">Promote</a>
+							</div>
+							<img src="./image/image_sidebar/chevron-right 2.png" alt="Dashboard Logo" class="menu__icon-next">
+						</li>
+						<li class="menu__item">
+							<div class="menu__item-name">
+								<img src="./image/image_sidebar/message-question 1.png" alt="Dashboard Logo" class="menu__icon">
+								<a href="" class="menu__link">Help</a>
+							</div>
+							<img src="./image/image_sidebar/chevron-right 2.png" alt="Dashboard Logo" class="menu__icon-next">
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="sidebar__profile">
+				<img src="./image/image_sidebar/Ellipse 8.png" alt="Evano" class="sidebar__profile-pic">
+				<div class="sidebar__profile-infa">
+					<p class="sidebar__profile-name">Evano</p>
+					<p class="sidebar__profile-role">Project Manager</p>
+				</div>
+			</div>
+		</aside>
+
+		<main class="dashboard__content content">
+			<header class="dashboard__header">
+				<h1>Hello Evano 👋🏼,</h1>
+				<div class="burger__menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+			</header>
+
+			<section class="content__customers">
+				<div class="content__customers-head">
+					<div class="customers-head__title">
+						<h2 class="customers-head__maintitle">All Customers</h2>
+						<p class="customers-head__subtitle">Active Members</p>
+					</div>
+					<div class="customers-head__search">
+						<img src="./image/image_content/search 1.png" alt="Search" class="customers-head__search-icon">
+						<input type="text" placeholder="Search" class="customers-head__input" />
+					</div>
+				</div>
+
+				<div class="content__customers-content">
+					<table>
+						<thead>
+							<tr>
+								<th>Customer Name</th>
+								<th>Company</th>
+								<th>Phone Number</th>
+								<th>Email</th>
+								<th>Country</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-label="Имя">Jane Cooper</td>
+								<td data-label="Возраст">Microsoft</td>
+								<td data-label="Город">(225) 555-0118</td>
+								<td data-label="Имя">jane@microsoft.com</td>
+								<td data-label="Возраст">United States</td>
+								<td data-label="Город"><span class="active">Active</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td data-label="Имя">Floyd Miles</td>
+								<td data-label="Возраст">Yahoo</td>
+								<td data-label="Город">(205) 555-0100</td>
+								<td data-label="Имя">floyd@yahoo.com</td>
+								<td data-label="Возраст">Kiribati</td>
+								<td data-label="Город"><span class="inactive">Inactive</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td data-label="Имя">Ronald Richards</td>
+								<td data-label="Возраст">Adobe</td>
+								<td data-label="Город">(302) 555-0107</td>
+								<td data-label="Имя">ronald@adobe.com</td>
+								<td data-label="Возраст">Israel</td>
+								<td data-label="Город"><span class="inactive">Inactive</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td data-label="Имя">Marvin McKinney</td>
+								<td data-label="Возраст">Tesla</td>
+								<td data-label="Город">(252) 555-0126</td>
+								<td data-label="Имя">marvin@tesla.com</td>
+								<td data-label="Возраст">Iran</td>
+								<td data-label="Город"><span class="active">Active</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td data-label="Имя">Jerome Bell</td>
+								<td data-label="Возраст">Google</td>
+								<td data-label="Город">(629) 555-0129</td>
+								<td data-label="Имя">jerome@google.com</td>
+								<td data-label="Возраст">Réunion</td>
+								<td data-label="Город"><span class="active">Active</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td data-label="Имя">Kathryn Murphy</td>
+								<td data-label="Возраст">Microsoft</td>
+								<td data-label="Город">(406) 555-0120</td>
+								<td data-label="Имя">kathryn@microsoft.com</td>
+								<td data-label="Возраст">Curaçao</td>
+								<td data-label="Город"><span class="active">Active</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td data-label="Имя">Jacob Jones</td>
+								<td data-label="Возраст">Yahoo</td>
+								<td data-label="Город">(208) 555-0112</td>
+								<td data-label="Имя">jacob@yahoo.com</td>
+								<td data-label="Возраст">Brazil</td>
+								<td data-label="Город"><span class="active">Active</span></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td data-label="Имя">Kristin Watson</td>
+								<td data-label="Возраст">Facebook</td>
+								<td data-label="Город">(704) 555-0127</td>
+								<td data-label="Имя">kristin@facebook.com</td>
+								<td data-label="Возраст">Åland Islands</td>
+								<td data-label="Город"><span class="inactive">Inactive</span></td>
+							</tr>
+						</tbody>
+
+					</table>
+
+				</div>
+
+				<div class="content__customers-pagination">
+					<div class="customers-pagination__infa">
+						<span>Showing data 1 to 8 of 256K entries</span>
+					</div>
+					<div class="customers-pagination__pages">
+						<span class="pages__number">&#60</span>
+						<span class="pages__number">1</span>
+						<span class="pages__number">2</span>
+						<span class="pages__number">3</span>
+						<span class="pages__number">4</span>
+						<span class="pages__number">...</span>
+						<span class="pages__number">40</span>
+						<span class="pages__number">&#62</span>
+					</div>
+
+				</div>
+
+			</section>
+		</main>
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
