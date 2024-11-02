@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
 	var burgerMenu = document.querySelector('.burger__menu');
 	var dashboardSidebar = document.querySelector('.dashboard__sidebar');

@@ -349,7 +349,6 @@ td{
  /* ///////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-//BUGRER_MENU
 
 @media only screen and (max-width: 992px) {
 	body.lock {
@@ -381,6 +380,7 @@ td{
 		top: 0;
 		right: -100%;
 		transition: all 0.3s ease 0s;
+		font-size: 21px;
 	}
 	.sidebar__logo-text.active{
 		position: fixed;
@@ -392,9 +392,6 @@ td{
 	.menu__list{
 		position: relative;
 		top:100px;
-	}
-	.sidebar__logo-text{
-		font-size: 21px;
 	}
 	.sidebar__profile{
 		margin-bottom: 1vh;
