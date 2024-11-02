@@ -56,6 +56,7 @@ body {
 	max-width: 1440px;
 	display: flex;
 	flex-direction: row;
+	border: 1px solid red;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -80,7 +81,6 @@ body {
 	margin-bottom: 6.9vh;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 	align-items: center;
 }
 .sidebar__menu{
@@ -120,12 +120,17 @@ body {
 .menu__list{
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	/* gap: 40px; */
 }
 .menu__item{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	/* border: 1px solid red; */
+	width: 100%;
+	/* margin-bottom: 40px; */
+	padding: 18px 10px;
+
 }
 .menu__item-name{
 	display: flex;
@@ -139,8 +144,35 @@ body {
 	font-size: clamp(12px, calc(1vw + 1rem), 14px);
 	color: #9197B3;
 }
+.menu__item:hover{
+	border-radius: 10px;
+	background-color: rgba(89, 50, 234, 0.69);
+}
+.menu__item:hover .menu__link{
+	color: white;
+}
+.menu__item:hover .menu__icon-next{
+	content: url('./image/image_sidebar/chevron-right\ 2\ white.png'); 
+}
 
-
+.menu__item:hover .icon-1{
+	content: url('./image/image_sidebar/key-square white.png'); 
+}
+.menu__item:hover .icon-2{
+	content: url('./image/image_sidebar/3d-square\ 1\ white.png'); 
+}
+.menu__item:hover .icon-3{
+	content: url('./image/image_sidebar/3d-square\ 1\ white.png'); 
+}
+.menu__item:hover .icon-4{
+	content: url('./image/image_sidebar/wallet-money 2 white.png'); 
+}
+.menu__item:hover .icon-5{
+	content: url('./image/image_sidebar/discount-shape 1 white.png'); 
+}
+.menu__item:hover .icon-6{
+	content: url('./image/image_sidebar/message-question\ 1\ white.png'); 
+}
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////// */
 .sidebar__profile-pic{
@@ -243,20 +275,22 @@ body {
 }
 th{	
 	font-weight: 500;
-	font-size: clamp(12px, calc(1vw + 1rem), 14px);
+	font-size: clamp(10px, calc(1vw + 1rem), 14px);
 	color: #B5B7C0;
 	font-family: 'Poppins', sans-serif;
 	padding: 2.4vh 2.4vh 2.4vh 0vh;
 	border-bottom: 2px solid #EEEEEE;
+	white-space: nowrap; 
 }
 
 td{
 	font-weight: 500;
-	font-size: clamp(12px, calc(1vw + 1rem), 14px);
+	font-size: clamp(10px, calc(1vw + 1rem), 14px);
 	color: #292D32;
 	font-family: 'Poppins', sans-serif;
 	padding: 2.4vh 2.4vh 2.4vh 0vh;
 	border-bottom: 2px solid #EEEEEE;
+	white-space: nowrap; 
 }
 
 .active{
@@ -278,7 +312,8 @@ td{
 	background-color: #FFC5C5;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 992px) {
 	table, thead, tbody, th, td, tr {
 	   display: block;
 	}
@@ -338,6 +373,12 @@ td{
 	border: 1px solid #EEEEEE;
 }
 
+.pages__number:hover{
+	color: #FFFFFF;
+	background-color: #5932EA;
+	border: 1px solid #5932EA;
+}
+
 @media (max-width: 768px) {
 	.content__customers-pagination{
 		flex-direction: column;
@@ -350,7 +391,7 @@ td{
 
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1247px) {
 	body.lock {
 		overflow: hidden;
 	}
